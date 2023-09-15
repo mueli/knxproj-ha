@@ -4,13 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["Michael Hammer <mail@michael-hammer.at>"]
 readme = "README.md"
+packages = [
+    { include = "xknxproject", from = "../xknxproject"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-xknxproject = "^3.2.0"
 striprtf = "^0.0.26"
 pyzipper = "^0.3.6"
-
+pyyaml = "^6.0.1"
+pydantic = "^2.3.0"
 
 [tool.poetry.group.dev.dependencies]
 ipython = "^8.15.0"
