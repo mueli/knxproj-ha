@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "knx-project-converter"
+version = "0.1.0"
+description = ""
+authors = ["Michael Hammer <mail@michael-hammer.at>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+xknxproject = "^3.2.0"
+striprtf = "^0.0.26"
+pyzipper = "^0.3.6"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.15.0"
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
