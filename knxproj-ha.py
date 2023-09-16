@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import logging
 import argparse
-from knxproj_ha.convert import convert
+from knxproj_ha.convert import convert, write
 
 logger = logging.getLogger("convert")
 
@@ -14,7 +14,8 @@ def main():
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
 
-    p = convert("resources/private.knxproj")
+    ha_config = convert("resources/private.knxproj")
+    write(ha_config, "")
 
 
 if __name__ == "__main__":
